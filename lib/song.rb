@@ -1,4 +1,4 @@
-
+require "pry"
 class Song
   attr_accessor :name, :artist, :genre
   @@count = 0
@@ -30,6 +30,7 @@ class Song
 
   def self.genre_count()
     collection = {}
+    binding.pry
     @@genres.map{|genre| genre.count}
   end
 end
