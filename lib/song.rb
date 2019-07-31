@@ -30,6 +30,6 @@ class Song
 
   def self.genre_count()
     collection = {}
-    
+
   end
 end
