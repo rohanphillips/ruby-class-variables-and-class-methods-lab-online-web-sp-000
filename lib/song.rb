@@ -33,4 +33,10 @@ class Song
     @@genres.each{ |name| collection[name] += 1 }
     collection
   end
+
+  def self.artis_count()
+    collection = Hash.new(0)
+    @@artists.each{ |name| collection[name] += 1 }
+    collection
+  end
 end
