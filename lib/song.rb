@@ -29,7 +29,7 @@ class Song
   end
 
   def self.genre_count()
-    collection = {}
+    collection = Hash.new(0)
     binding.pry
     @@genres.each{|name| collection[name] }
   end
