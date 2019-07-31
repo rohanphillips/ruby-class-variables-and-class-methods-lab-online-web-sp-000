@@ -31,6 +31,6 @@ class Song
   def self.genre_count()
     collection = {}
     binding.pry
-    @@genres.map{|genre| genre.count}
+    @@genres.each{|name| collection[name] }
   end
 end
