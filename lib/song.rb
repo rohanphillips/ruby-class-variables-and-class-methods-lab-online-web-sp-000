@@ -30,6 +30,6 @@ class Song
 
   def self.genre_count()
     collection = {}
-
+    @@genres.map{|genre| genre : genre.count}
   end
 end
